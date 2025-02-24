@@ -4,7 +4,7 @@ require "nvchad.mappings"
 
 local map = vim.keymap.set
 
-map("n", ";", ":", { desc = "CMD enter command mode" })
+-- map("n", ";", ":", { desc = "CMD enter command mode" })
 map("n", "<leader>w", "<cmd>w<CR>", { desc = "Save" })
 map("n", "<leader>cx", function()
   require("nvchad.tabufline").closeAllBufs()
@@ -82,5 +82,9 @@ map("i", "jj", "<ESC>")
 map("i", "<C-g>", function()
   return vim.fn["codeium#Accept"]()
 end, { expr = true })
+
+map("n", "<C-t>", function()
+  require("nvchad.themes").open()
+end, {})
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
