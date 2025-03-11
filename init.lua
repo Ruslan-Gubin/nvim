@@ -11,6 +11,8 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
+-- vim.g.codeium_disable_bindings = 1
+
 local lazy_config = require "configs.lazy"
 
 -- load plugins
@@ -21,7 +23,9 @@ require("lazy").setup({
     branch = "v2.5",
     import = "nvchad.plugins",
   },
-  { import = "plugins" },
+  {
+    import = "plugins",
+  },
 }, lazy_config)
 
 -- load theme
