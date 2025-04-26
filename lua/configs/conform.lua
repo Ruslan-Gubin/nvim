@@ -7,6 +7,7 @@ return {
     javascript = { "prettied", "prettier", stop_after_ferst = true },
     typescript = { "prettier" },
     typescriptreact = { "prettier" },
+    vue = { "prettier" },
   },
 
   format_on_save = {
