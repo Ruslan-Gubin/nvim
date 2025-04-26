@@ -42,6 +42,7 @@ return {
     lazy = false,
     dependencies = { "nvim-tree/nvim-web-devicons" },
   },
+<<<<<<< HEAD
 
   -- {
   --   "Exafunction/codeium.vim",
@@ -76,4 +77,23 @@ return {
   --     "nvim-telescope/telescope.nvim",
   --   },
   -- },
+=======
+  {
+    "Exafunction/codeium.vim",
+    event = "BufEnter",
+  },
+  {
+    "jackMort/ChatGPT.nvim",
+    event = "VeryLazy",
+    config = function()
+      require("chatgpt").setup()
+    end,
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      "nvim-lua/plenary.nvim",
+      "folke/trouble.nvim", -- optional
+      "nvim-telescope/telescope.nvim",
+    },
+  },
+>>>>>>> 8aef7e5ba1c6d532dffb2c1c9077a3f4e4835a53
 }
