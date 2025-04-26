@@ -82,6 +82,7 @@ return {
     "Exafunction/codeium.vim",
     event = "BufEnter",
   },
+<<<<<<< HEAD
   {
     "jackMort/ChatGPT.nvim",
     event = "VeryLazy",
@@ -96,4 +97,6 @@ return {
     },
   },
 >>>>>>> 8aef7e5ba1c6d532dffb2c1c9077a3f4e4835a53
+=======
+>>>>>>> 7da1355 (change)
 }
