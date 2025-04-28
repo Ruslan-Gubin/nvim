@@ -2,14 +2,14 @@ return {
   "nvim-treesitter/nvim-treesitter",
 
   opts = {
-    highlight = {
-      enable = true,
-      disable = {},
-    },
-    indent = {
-      enable = true,
-      disable = {},
-    },
+    -- highlight = {
+    --   enable = true,
+    --   disable = {},
+    -- },
+    -- indent = {
+    --   enable = true,
+    --   disable = {},
+    -- },
     ensure_installed = {
       "vim",
       "lua",
@@ -19,11 +19,10 @@ return {
       "typescript",
       "javascript",
       "go",
-      "html",
-      "tsx",
+      -- "tsx",
     },
-    autotag = {
-      enable = true,
-    },
+    -- autotag = {
+    --   enable = true,
+    -- },
   },
 }

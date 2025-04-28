@@ -4,19 +4,18 @@ local bufferline_plugin = require "plugins.bufferline"
 
 return {
   bufferline_plugin,
-  treesitter_plugin,
   autotag_plugin,
+  treesitter_plugin,
+  {
+    "neovim/nvim-lspconfig",
+    config = function()
+      require "configs.lspconfig"
+    end,
+  },
   {
     "stevearc/conform.nvim",
     event = "BufWritePre",
     opts = require "configs.conform",
-  },
-  {
-    "neovim/nvim-lspconfig",
-    config = function()
-      -- require("nvchad.configs.lspconfig").defaults()
-      require "configs.lspconfig"
-    end,
   },
   {
     "stevearc/dressing.nvim",

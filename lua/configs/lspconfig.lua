@@ -1,13 +1,7 @@
 require("nvchad.configs.lspconfig").defaults()
 
 local lspconfig = require "lspconfig"
-<<<<<<< HEAD
-local servers = { "html", "cssls", "gopls" }
-=======
-
--- EXAMPLE
-local servers = { "html", "cssls", "ts_ls", "gopls", "clangd" }
->>>>>>> 7da1355 (change)
+local servers = { "html", "cssls", "gopls", "clangd" }
 local nvlsp = require "nvchad.configs.lspconfig"
 
 for _, lsp in ipairs(servers) do
