@@ -19,7 +19,7 @@ return {
       "typescript",
       "javascript",
       "go",
-      -- "tsx",
+      "tsx",
     },
     -- autotag = {
     --   enable = true,

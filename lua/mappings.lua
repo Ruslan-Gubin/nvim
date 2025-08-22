@@ -77,6 +77,7 @@ map("t", "<C-f>", function()
 end, { desc = "Toogle Terminal Float" })
 
 -- Basic
+map("n", "<leader>e", ":NvimTreeToggle<CR>", {})
 
 map("i", "jj", "<ESC>")
 map("i", "<C-g>", function()
